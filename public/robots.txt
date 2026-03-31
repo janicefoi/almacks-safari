@@ -1,0 +1,7 @@
+User-agent: Googlebot
+Disallow: /nogooglebot/
+
+User-agent: *
+Allow: /
+
+Sitemap: https://sentimental-sharp-kookabura-s2988i.teleporthq.app/sitemap.xml
