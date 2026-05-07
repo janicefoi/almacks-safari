@@ -69,16 +69,14 @@ dialog::backdrop {
               Personalized adventures for every traveler.
             </p>
             <div className="hero-cta-group">
-              <a href="#trips">
+              <a href="/safari-packages">
                 <div className="btn-primary btn-lg btn">
                   <span>Explore Trips</span>
                 </div>
               </a>
-              <a href="#contact">
-                <div className="btn-lg btn btn-outline">
-                  <span>Book Consultation</span>
-                </div>
-              </a>
+              <button onClick={() => document.getElementById('planModal')?.showModal?.()} className="btn-lg btn btn-outline">
+                <span>Book Consultation</span>
+              </button>
             </div>
           </div>
         </div>
@@ -119,80 +117,80 @@ dialog::backdrop {
           <div className="safari-carousel-track">
             <div className="safari-card">
               <img
-                alt="Amboseli National Park"
+                alt="Lake Nakuru with Flamingos"
                 src="https://images.pexels.com/photos/27989224/pexels-photo-27989224.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="safari-card-img"
               />
               <div className="safari-card-overlay">
-                <span className="safari-tag">Kenya</span>
+                <span className="safari-tag">Kenya - 5 Days</span>
                 <h3 className="safari-card-title section-title">
-                  Package 1
+                  Rift Valley, Western & Nyanza Safari
                 </h3>
                 <p className="safari-card-info section-content">
-                  Witness elephants against the backdrop of Mount Kilimanjaro.
+                  Experience Kenya's breathtaking landscapes, wildlife, and Luhya culture across Lake Nakuru, Kakamega Rainforest, and Lake Victoria.
                 </p>
                 <div className="safari-card-footer">
-                  <span className="safari-price">From KSh 32,000</span>
-                  <button className="btn-accent btn btn-sm">Quick Book</button>
+                  <span className="safari-price">From €1,535</span>
+                  <button onClick={() => document.getElementById('planModal')?.showModal?.()} className="btn-accent btn btn-sm">Quick Book</button>
                 </div>
               </div>
             </div>
             <div className="safari-card">
               <img
-                alt="Nairobi National Park"
+                alt="Lake Nakuru National Park"
                 src="https://images.pexels.com/photos/27731392/pexels-photo-27731392.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="safari-card-img"
               />
               <div className="safari-card-overlay">
-                <span className="safari-tag">Kenya</span>
+                <span className="safari-tag">Kenya - 1 Day</span>
                 <h3 className="safari-card-title section-title">
-                  Package 2
+                  Lake Nakuru Game Drive
                 </h3>
                 <p className="safari-card-info section-content">
-                  Experience urban wildlife viewing in Nairobi National Park.
+                  Nairobi to Lake Nakuru National Park. Enjoy game drives with sightings of flamingos and rhinos. Stay at a mid-range lodge.
                 </p>
                 <div className="safari-card-footer">
-                  <span className="safari-price">From KSh 44,000</span>
+                  <span className="safari-price">From €245</span>
                   <button className="btn-accent btn btn-sm">Quick Book</button>
                 </div>
               </div>
             </div>
             <div className="safari-card">
               <img
-                alt="Maasai Mara"
-                src="https://images.pexels.com/photos/13365357/pexels-photo-13365357.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
+                alt="Kakamega Rainforest"
+                src="https://images.pexels.com/photos/32884481/pexels-photo-32884481.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="safari-card-img"
               />
               <div className="safari-card-overlay">
-                <span className="safari-tag">Kenya</span>
+                <span className="safari-tag">Kenya - 2 Days</span>
                 <h3 className="safari-card-title section-title">
-                  Package 3
+                  Kakamega Rainforest Expedition
                 </h3>
                 <p className="safari-card-info section-content">
-                  Discover wildlife in Maasai Mara with local guides.
+                  Explore Kenya's only tropical rainforest. Guided forest walks, bird watching, and experience authentic Luhya culture.
                 </p>
                 <div className="safari-card-footer">
-                  <span className="safari-price">From KSh 30,000</span>
+                  <span className="safari-price">From €320</span>
                   <button className="btn-accent btn btn-sm">Quick Book</button>
                 </div>
               </div>
             </div>
             <div className="safari-card">
               <img
-                alt="Watamu Beach"
+                alt="Lake Victoria, Kisumu"
                 src="https://images.pexels.com/photos/1450360/pexels-photo-1450360.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1500"
                 className="safari-card-img"
               />
               <div className="safari-card-overlay">
-                <span className="safari-tag">Kenya</span>
+                <span className="safari-tag">Kenya - 2 Days</span>
                 <h3 className="safari-card-title section-title">
-                  Package 4
+                  Lake Victoria Relaxation
                 </h3>
                 <p className="safari-card-info section-content">
-                  Experience the blue waters of the Indian Ocean in Watamu.
+                  Transfer to Kisumu on Lake Victoria. Visit Dunga Beach, enjoy boat rides, and relax at a beautiful lakeside hotel.
                 </p>
                 <div className="safari-card-footer">
-                  <span className="safari-price">From KSh 50,000</span>
+                  <span className="safari-price">From €315</span>
                   <button className="btn-accent btn btn-sm">Quick Book</button>
                 </div>
               </div>
